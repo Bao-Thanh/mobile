@@ -50,7 +50,7 @@ public class RestaurantMenuActivity extends AppCompatActivity implements MenuLis
             @Override
             public void onClick(View v) {
                 if(itemsInCartList != null && itemsInCartList.size() <= 0) {
-                    Toast.makeText(RestaurantMenuActivity.this, "Please add some items in cart.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RestaurantMenuActivity.this, "Bạn chưa chọn món ăn kìa!!!.", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 restaurantModel.setMenus(itemsInCartList);
@@ -79,7 +79,7 @@ public class RestaurantMenuActivity extends AppCompatActivity implements MenuLis
         for(Menu m : itemsInCartList) {
             totalItemInCart = totalItemInCart + m.getTotalInCart();
         }
-        buttonCheckout.setText("Checkout (" +totalItemInCart +") items");
+        buttonCheckout.setText("Thanh toán (" +totalItemInCart +") món");
     }
 
     @Override
@@ -94,7 +94,7 @@ public class RestaurantMenuActivity extends AppCompatActivity implements MenuLis
             for(Menu m : itemsInCartList) {
                 totalItemInCart = totalItemInCart + m.getTotalInCart();
             }
-            buttonCheckout.setText("Checkout (" +totalItemInCart +") items");
+            buttonCheckout.setText("Thanh toán (" +totalItemInCart +") món");
         }
     }
 
@@ -107,7 +107,7 @@ public class RestaurantMenuActivity extends AppCompatActivity implements MenuLis
             for(Menu m : itemsInCartList) {
                 totalItemInCart = totalItemInCart + m.getTotalInCart();
             }
-            buttonCheckout.setText("Checkout (" +totalItemInCart +") items");
+            buttonCheckout.setText("Thanh toán (" +totalItemInCart +") món");
         }
     }
 

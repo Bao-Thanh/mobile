@@ -24,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:text="Checkout"
+        android:text="Thanh toán"
         android:textSize="16sp"
         android:textStyle="bold"
         android:gravity="center"

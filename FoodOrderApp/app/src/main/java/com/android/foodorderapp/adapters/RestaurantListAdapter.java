@@ -40,8 +40,8 @@ public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAd
     @Override
     public void onBindViewHolder(@NonNull RestaurantListAdapter.MyViewHolder holder, int position) {
         holder.restaurantName.setText(restaurantModelList.get(position).getName());
-        holder.restaurantAddress.setText("Address: "+restaurantModelList.get(position).getAddress());
-        holder.restaurantHours.setText("Today's hours: " + restaurantModelList.get(position).getHours().getTodaysHours());
+        holder.restaurantAddress.setText("Địa chỉ: "+restaurantModelList.get(position).getAddress());
+        holder.restaurantHours.setText("Giờ mở cửa: " + restaurantModelList.get(position).getHours().getTodaysHours());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

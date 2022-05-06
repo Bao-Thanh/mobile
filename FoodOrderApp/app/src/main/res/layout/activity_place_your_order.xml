@@ -18,7 +18,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_margin="10dp"
-            android:text="Customer Details"
+            android:text="Chi tiết hóa đơn"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toStartOf="@+id/switchDelivery"
            app:layout_constraintTop_toBottomOf="@+id/tvCustomerDetails"
-            android:text="Pickup"
+            android:text="Tự lấy"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toEndOf="@+id/switchDelivery"
             app:layout_constraintTop_toBottomOf="@+id/tvCustomerDetails"
-            android:text="Delivery"
+            android:text="Giao hàng"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -60,7 +60,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="05dp"
             android:layout_marginBottom="05dp"
-            android:hint="Enter your name"/>
+            android:hint="Tên của bạn"/>
 
         <EditText android:id="@+id/inputAddress"
             android:layout_width="match_parent"
@@ -72,7 +72,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="05dp"
             android:layout_marginBottom="05dp"
-            android:hint="Enter your address"
+            android:hint="Địa chỉ"
             android:visibility="gone"/>
 
         <EditText android:id="@+id/inputCity"
@@ -85,7 +85,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="05dp"
             android:layout_marginBottom="05dp"
-            android:hint="Enter your city"
+            android:hint="Thành phố"
             android:visibility="gone"/>
 
         <EditText android:id="@+id/inputState"
@@ -98,7 +98,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="05dp"
             android:layout_marginBottom="05dp"
-            android:hint="Enter your state"
+            android:hint="Quận/Huyện/TP"
             android:visibility="gone"/>
 
         <EditText android:id="@+id/inputZip"
@@ -111,7 +111,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="05dp"
             android:layout_marginBottom="05dp"
-            android:hint="Enter your zip"
+            android:hint="Mã zip"
             android:inputType="number"
             android:maxLength="5"
             android:visibility="gone"/>
@@ -123,7 +123,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/inputZip"
             android:layout_margin="10dp"
-            android:text="Card Details"
+            android:text="Thông tin thẻ"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -137,7 +137,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="05dp"
             android:layout_marginBottom="05dp"
-            android:hint="Enter Card Number"
+            android:hint="Số thẻ"
             android:inputType="number"
             android:maxLength="16"/>
 
@@ -151,7 +151,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="05dp"
             android:layout_marginBottom="05dp"
-            android:hint="Enter Card expiry(mm/yyyy)"
+            android:hint="Ngày phát hành (mm/yyyy)"
             android:inputType="number"
             android:maxLength="6"/>
 
@@ -165,7 +165,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="05dp"
             android:layout_marginBottom="05dp"
-            android:hint="Enter Card pin(3 digits)"
+            android:hint="Mã PIN(3 số)"
             android:inputType="number"
             android:maxLength="3"/>
 
@@ -176,7 +176,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/inputCardPin"
             android:layout_margin="10dp"
-            android:text="Total items in cart"
+            android:text="Danh sách món"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -195,7 +195,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cartItemsRecyclerView"
             android:layout_margin="10dp"
-            android:text="Sub total"
+            android:text="Đơn giá"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -215,7 +215,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvSubtotal"
             android:layout_margin="10dp"
-            android:text="Delivery Charge"
+            android:text="Phí vận chuyển"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -235,7 +235,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvDeliveryCharge"
             android:layout_margin="10dp"
-            android:text="Total"
+            android:text="Tổng cộng"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -255,7 +255,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvTotal"
-            android:text="Place your order"
+            android:text="Giao hàng"
             android:textSize="16sp"
             android:textStyle="bold"
             android:gravity="center"

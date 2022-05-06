@@ -111,25 +111,25 @@ public class PlaceYourOrderActivity extends AppCompatActivity {
 
     private void onPlaceOrderButtonClick(RestaurantModel restaurantModel) {
         if(TextUtils.isEmpty(inputName.getText().toString())) {
-            inputName.setError("Please enter name ");
+            inputName.setError("Tên của bạn ");
             return;
         } else if(isDeliveryOn && TextUtils.isEmpty(inputAddress.getText().toString())) {
-            inputAddress.setError("Please enter address ");
+            inputAddress.setError("Địa chỉ ");
             return;
         }else if(isDeliveryOn && TextUtils.isEmpty(inputCity.getText().toString())) {
-            inputCity.setError("Please enter city ");
+            inputCity.setError("Thành phố ");
             return;
         }else if(isDeliveryOn && TextUtils.isEmpty(inputState.getText().toString())) {
-            inputState.setError("Please enter zip ");
+            inputState.setError("Mã zip ");
             return;
         }else if( TextUtils.isEmpty(inputCardNumber.getText().toString())) {
-            inputCardNumber.setError("Please enter card number ");
+            inputCardNumber.setError("Số thẻ ");
             return;
         }else if( TextUtils.isEmpty(inputCardExpiry.getText().toString())) {
-            inputCardExpiry.setError("Please enter card expiry ");
+            inputCardExpiry.setError("Ngày phát hành ");
             return;
         }else if( TextUtils.isEmpty(inputCardPin.getText().toString())) {
-            inputCardPin.setError("Please enter card pin/cvv ");
+            inputCardPin.setError("Mã pin/cvv ");
             return;
         }
         //start success activity..

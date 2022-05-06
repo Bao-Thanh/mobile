@@ -3,9 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2265" />
+        <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/drawable/ic_add_circle.xml" value="0.2265" />
+        <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/drawable/ic_fsplash.xml" value="0.2265" />
+        <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/drawable/ic_remove_circle.xml" value="0.2265" />
+        <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/drawable/login_shape_bk.xml" value="0.2225" />
+        <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/layout/activity_login.xml" value="0.21105072463768115" />
         <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/layout/activity_main.xml" value="0.21784420289855072" />
         <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/layout/activity_order_succeess.xml" value="0.21784420289855072" />
+        <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/layout/activity_place_your_order.xml" value="0.18432971014492755" />
+        <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/layout/activity_restaurant_menu.xml" value="0.21784420289855072" />
         <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/layout/activity_splash.xml" value="0.21784420289855072" />
+        <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/layout/menu_recycler_row.xml" value="0.21784420289855072" />
+        <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/layout/place_order_recycler_row.xml" value="0.21784420289855072" />
+        <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/layout/recycler_row.xml" value="0.21784420289855072" />
       </map>
     </option>
   </component>
