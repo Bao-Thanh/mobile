@@ -1,8 +1,51 @@
 <resources>
-    <string name="app_name">FoodOrderApp</string>
+    <string name="app_name">Food Order Application</string>
+    <string name="welcome">Welcome to FoodApp</string>
+    <!--Log In-->
+    <string name="login">Log In</string>
+    <string name="log_out">Log Out</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forget_pass">Forget Password?</string>
+    <!--Reset pass -->
+    <string name="have_account">Already have account?Log in.</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="receive_link">Receive link in email</string>
+    <!--Register-->
+    <string name="create_n_account">Create New Account</string>
+    <string name="create_n_s_account">Create New Seller Account</string>
+    <string name="create_account">Create Account</string>
+    <string name="f_name">First Name</string>
+    <string name="l_name">Last Name</string>
+    <string name="ph_no">Phone no</string>
+    <string name="owner_ph_no">Owner\'s phone no</string>
+    <string name="for_order">For order:</string>
+    <string name="for_owner">Owner info:</string>
+    <string name="shop_name">Shop name</string>
+    <string name="GST_no">GST number</string>
+    <string name="for_company">Company info:</string>
+    <string name="address">Address</string>
+    <string name="pincode">Pincode</string>
+    <string name="valid_numberaccount">Number Account (STK)</string>
+    <!--Register 2-->
     <string name="register">REGISTER</string>
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
     <string name="signup_login_hint">Already have an account? Sign In</string>
     <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <!--  NAVIGATION  -->
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_profile">Profile</string>
+    <!--Profile-->
+    <string name="name">My name</string>
+    <string name="profile">My Profile</string>
+    <string name="favourites">Favourites</string>
+    <string name="my_cart">My Cart</string>
+    <string name="order_history">Order History</string>
+    <string name="payment_history">Payment History</string>
+    <string name="help">Help</string>
+    <string name="contact_dev">Contact Developer</string>
+    <string name="about">About our app</string>
+    <string name="design">design purpose</string>
 </resources>
