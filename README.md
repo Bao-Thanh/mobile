@@ -1,7 +1,7 @@
 # Mobile Project
 > A Food Ordered Application - For People to Booking or Ordering Food
 <hr>
-![alt text](https://appinventiv.com/wp-content/uploads/sites/1/2019/08/How-to-Write-a-Great-Brief-for-a-Mobile-App-Development-Project-02.png)
+![Picture](https://appinventiv.com/wp-content/uploads/sites/1/2019/08/How-to-Write-a-Great-Brief-for-a-Mobile-App-Development-Project-02.png)
 <hr>
 
 # Table of Contents
