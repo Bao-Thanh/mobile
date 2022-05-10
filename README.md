@@ -2,9 +2,7 @@
 > A Food Ordered Application - For People to Booking or Ordering Food
 <hr>
 
-![Alt text](FoodOrderApp/mobile.png?raw=true "Optional Title")
-
-![solarized palette](https://github.com/altercation/solarized/raw/master/img/solarized-palette.png)
+![Alt text](FoodOrderApp/mobile.png?raw=true "Mobile App")
 
 <hr>
 
