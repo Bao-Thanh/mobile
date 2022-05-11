@@ -1,13 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-37:12
 MERGED from [androidx.navigation:navigation-ui:2.3.4] C:\Users\Admin\.gradle\caches\transforms-3\2952e492481fde2ab8096ac49fdc8b73\transformed\navigation-ui-2.3.4\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Admin\.gradle\caches\transforms-3\7a5c3599892034e335b2f8f068739897\transformed\material-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Admin\.gradle\caches\transforms-3\b6b10efe47fb30ada03ecc5eebbdcba5\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Admin\.gradle\caches\transforms-3\95624e08516521017ceddb69964da581\transformed\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [com.airbnb.android:lottie:3.6.1] C:\Users\Admin\.gradle\caches\transforms-3\2695098e197e9675be0f5f2e13efd606\transformed\jetified-lottie-3.6.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Admin\.gradle\caches\transforms-3\fc2a16503a7bfe59aa451ee6660f440f\transformed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Admin\.gradle\caches\transforms-3\ce41f117bd91c410d566893a9847e539\transformed\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.firebase:firebase-firestore:24.1.2] C:\Users\Admin\.gradle\caches\transforms-3\c199173800d935c898449c009a56dd89\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:2:1-26:12
@@ -68,20 +69,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Admin\.gradle\ca
 MERGED from [androidx.print:print:1.0.0] C:\Users\Admin\.gradle\caches\transforms-3\b054c3853d7367f89b2e55f252ac9b20\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Admin\.gradle\caches\transforms-3\5b9e4d2de6ef7e2ff2131363b3390494\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Admin\.gradle\caches\transforms-3\2f9d3b343d14d8a63feeecf9035252df\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
-INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-37:12
 	package
 		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml
 		INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml
-		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-37:12
 		INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml
-		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:1-37:12
 		INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -108,13 +109,15 @@ MERGED from [com.google.firebase:firebase-database:20.0.5] C:\Users\Admin\.gradl
 	android:name
 		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:8:5-37:19
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:8:5-35:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Admin\.gradle\caches\transforms-3\7a5c3599892034e335b2f8f068739897\transformed\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Admin\.gradle\caches\transforms-3\7a5c3599892034e335b2f8f068739897\transformed\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Admin\.gradle\caches\transforms-3\b6b10efe47fb30ada03ecc5eebbdcba5\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Admin\.gradle\caches\transforms-3\b6b10efe47fb30ada03ecc5eebbdcba5\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Admin\.gradle\caches\transforms-3\95624e08516521017ceddb69964da581\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Admin\.gradle\caches\transforms-3\95624e08516521017ceddb69964da581\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [com.airbnb.android:lottie:3.6.1] C:\Users\Admin\.gradle\caches\transforms-3\2695098e197e9675be0f5f2e13efd606\transformed\jetified-lottie-3.6.1\AndroidManifest.xml:9:5-20
+MERGED from [com.airbnb.android:lottie:3.6.1] C:\Users\Admin\.gradle\caches\transforms-3\2695098e197e9675be0f5f2e13efd606\transformed\jetified-lottie-3.6.1\AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Admin\.gradle\caches\transforms-3\ce41f117bd91c410d566893a9847e539\transformed\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Admin\.gradle\caches\transforms-3\ce41f117bd91c410d566893a9847e539\transformed\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
 MERGED from [com.google.firebase:firebase-firestore:24.1.2] C:\Users\Admin\.gradle\caches\transforms-3\c199173800d935c898449c009a56dd89\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:16:5-24:19
@@ -162,43 +165,67 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ad
 	android:usesCleartextTraffic
 		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:14:9-44
 activity#com.android.foodorderapp.LoginAccount
-ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:24:9-49
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:16:9-49
 	android:name
-		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:24:19-47
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:16:19-47
+activity#com.android.foodorderapp.ui.profile.ProfileFragment
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:17:9-63
+	android:name
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:17:19-61
+activity#com.android.foodorderapp.profile.AboutApp
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:18:9-53
+	android:name
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:18:19-51
+activity#com.android.foodorderapp.profile.ProfileCustomer
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:19:9-60
+	android:name
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:19:19-58
+activity#com.android.foodorderapp.profile.ContactDev
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:20:9-55
+	android:name
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:20:19-53
+activity#com.android.foodorderapp.profile.OrderHistory
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:21:9-57
+	android:name
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:21:19-55
+activity#com.android.foodorderapp.profile.PaymentHistory
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:22:9-59
+	android:name
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:22:19-57
 activity#com.android.foodorderapp.CreateAccount
-ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:25:9-50
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:23:9-50
 	android:name
-		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:25:19-48
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:23:19-48
 activity#com.android.foodorderapp.OrderSucceessActivity
-ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:26:9-59
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:24:9-59
 	android:name
-		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:26:19-56
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:24:19-56
 activity#com.android.foodorderapp.PlaceYourOrderActivity
-ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:27:9-60
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:25:9-60
 	android:name
-		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:27:19-57
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:25:19-57
 activity#com.android.foodorderapp.RestaurantMenuActivity
-ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:28:9-60
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:26:9-60
 	android:name
-		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:28:19-57
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:26:19-57
 activity#com.android.foodorderapp.SplashActivity
-ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:29:9-35:20
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:27:9-33:20
 	android:name
-		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:29:19-49
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:27:19-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:30:13-34:29
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:31:17-69
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:31:25-66
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:33:17-77
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:33:27-74
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:31:27-74
 activity#com.android.foodorderapp.MainActivity
-ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:36:9-50
+ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:34:9-50
 	android:name
-		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:36:19-47
+		ADDED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml:34:19-47
 uses-sdk
 INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\Appmobile\mobile\FoodOrderApp\app\src\main\AndroidManifest.xml
@@ -211,6 +238,8 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Admin\.grad
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Admin\.gradle\caches\transforms-3\b6b10efe47fb30ada03ecc5eebbdcba5\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Admin\.gradle\caches\transforms-3\95624e08516521017ceddb69964da581\transformed\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Admin\.gradle\caches\transforms-3\95624e08516521017ceddb69964da581\transformed\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.airbnb.android:lottie:3.6.1] C:\Users\Admin\.gradle\caches\transforms-3\2695098e197e9675be0f5f2e13efd606\transformed\jetified-lottie-3.6.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.airbnb.android:lottie:3.6.1] C:\Users\Admin\.gradle\caches\transforms-3\2695098e197e9675be0f5f2e13efd606\transformed\jetified-lottie-3.6.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Admin\.gradle\caches\transforms-3\fc2a16503a7bfe59aa451ee6660f440f\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Admin\.gradle\caches\transforms-3\fc2a16503a7bfe59aa451ee6660f440f\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Admin\.gradle\caches\transforms-3\ce41f117bd91c410d566893a9847e539\transformed\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41

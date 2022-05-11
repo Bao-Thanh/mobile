@@ -19,6 +19,7 @@
         <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/layout/place_order_recycler_row.xml" value="0.21784420289855072" />
         <entry key="..\:/Android/FoodApp-main/FoodOrderApp/app/src/main/res/layout/recycler_row.xml" value="0.21784420289855072" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1785" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable-v24/sea_round_corner.xml" value="0.1" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable/button_bg.xml" value="0.1785" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable/ic_add_circle.xml" value="0.1785" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable/ic_fsplash.xml" value="0.1785" />
@@ -28,16 +29,23 @@
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable/round_corner.xml" value="0.1" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable/round_corner_hollow.xml" value="0.1" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/font/nunito.xml" value="0.1" />
-        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/action_bar.xml" value="0.25" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/acitivity_profile_customer.xml" value="0.12360688956433637" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/action_bar.xml" value="0.2" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_about_app.xml" value="0.25416666666666665" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_contact_developer.xml" value="0.17255434782608695" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_create_account.xml" value="0.1" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_login.xml" value="0.1911231884057971" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_main.xml" value="0.1911231884057971" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_order_history.xml" value="0.17255434782608695" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_order_succeess.xml" value="0.2210144927536232" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_payment_history.xml" value="0.17255434782608695" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_place_your_order.xml" value="0.12907608695652173" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_profile_customer.xml" value="0.1574074074074074" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_restaurant_menu.xml" value="0.1911231884057971" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_splash.xml" value="0.1911231884057971" />
-        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/fragment_profile.xml" value="0.17525773195876287" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/menu_recycler_row.xml" value="0.175" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/place_order_recycler_row.xml" value="0.25416666666666665" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/recycler_row.xml" value="0.1160081053698075" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/test.xml" value="0.175" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/menu/actionbarmenu.xml" value="0.17604166666666668" />

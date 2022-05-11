@@ -20,7 +20,7 @@ public class LogoutDialog extends AppCompatDialogFragment {
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder=new AlertDialog.Builder(getActivity());
-        builder.setTitle("LogOut")
+        builder.setTitle("Log Out?")
                 .setMessage("Are you sure want to log out?")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override

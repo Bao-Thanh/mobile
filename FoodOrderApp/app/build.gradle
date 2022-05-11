@@ -46,6 +46,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.0.0'
     //Circular ImageView
     implementation 'com.mikhaellopez:circularimageview:4.2.0'
+    //Lottie animation lib for animation in contact dev
+    implementation 'com.airbnb.android:lottie:3.6.1'
     //Navigation
     implementation 'androidx.navigation:navigation-fragment:2.3.4'
     implementation 'androidx.navigation:navigation-ui:2.3.4'

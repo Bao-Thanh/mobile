@@ -46,6 +46,19 @@
     <string name="payment_history">Payment History</string>
     <string name="help">Help</string>
     <string name="contact_dev">Contact Developer</string>
-    <string name="about">About our app</string>
     <string name="design">design purpose</string>
+    <!-- About app   -->
+    <string name="about">About our app</string>
+    <string name="about_para1">Ứng dụng phục vụ cho mục đích trung gian giữa người bán và người mua, đây sẽ là hệ thống mà các nhà hàng vừa và nhỏ đưa thực đơn của mình vào chúng tôi sẽ là người trung gian đặt hàng giúp bạn và mang nó đến cho bạn!</string>
+    <string name="about_para10">Ứng dụng được sinh viên tìm hiểu và xây dựng nên, nếu còn nhiều lỗi khiến bạn không hài lòng. Xin bạn vui lòng bỏ qua!</string>
+    <string name="about_para11">Hi vọng bạn có trải nghiệm thú vị cùng với ứng dụng của chúng mình!</string>
+    <!-- Update profile  -->
+    <string name="update_det">Update details</string>
+    <string name="verifyemail">Verify your email*</string>
+    <string name="updansave">Update and Save changes</string>
+    <!-- Contact dev   -->
+    <string name="tellproblem">Hãy cho chúng tôi biết vấn đề của bạn</string>
+    <string name="sevofproblem">Mức độ nghiêm trọng</string>
+    <string name="detailaboutproblem">Chi tiết vấn đề mà bạn đang gặp phải:</string>
+    <string name="sendmail">Send mail</string>
 </resources>

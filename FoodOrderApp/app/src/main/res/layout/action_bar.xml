@@ -10,10 +10,22 @@
         android:translationZ="100dp"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@color/purple_700"
+        android:scaleY="0.8"
+        android:scaleX="0.8"
+        android:background="?android:selectableItemBackground"
         android:layout_alignEnd="@+id/topbar"
         app:srcCompat="@drawable/logouticon" />
-
+    <ImageButton
+        android:id="@+id/btnProfile"
+        android:translationZ="100dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleY="0.8"
+        android:scaleX="0.8"
+        android:layout_marginRight="5dp"
+        android:background="?android:selectableItemBackground"
+        android:layout_toLeftOf="@+id/btnLoggout"
+        app:srcCompat="@drawable/profile_info_36" />
     <Button
         android:id="@+id/topbar"
         android:layout_width="match_parent"

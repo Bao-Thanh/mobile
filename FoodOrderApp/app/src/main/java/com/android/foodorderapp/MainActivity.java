@@ -20,6 +20,7 @@ import android.widget.ImageButton;
 
 import com.android.foodorderapp.adapters.RestaurantListAdapter;
 import com.android.foodorderapp.model.RestaurantModel;
+import com.android.foodorderapp.ui.profile.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -40,7 +41,7 @@ import com.android.foodorderapp.extras.LogoutDialog;
 public class MainActivity extends AppCompatActivity implements RestaurantListAdapter.RestaurantListClickListener {
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
-    ImageButton btnSignOut;
+    ImageButton btnSignOut, btnProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,11 +55,16 @@ public class MainActivity extends AppCompatActivity implements RestaurantListAda
 //        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 //        NavigationUI.setupWithNavController(navView, navController);
 
+        //Add action bar
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         actionBar.setCustomView(R.layout.action_bar);
         List<RestaurantModel> restaurantModelList =  getRestaurantData();
+        //find button on action_bar
         btnSignOut = findViewById(R.id.btnLoggout);
+        btnProfile = findViewById(R.id.btnProfile);
+
+        //Recycle view for restaurant
         initRecyclerView(restaurantModelList);
 
         //get firebase auth instance
@@ -81,11 +87,22 @@ public class MainActivity extends AppCompatActivity implements RestaurantListAda
             }
         };
 
+        btnProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Create
+                Intent i = new Intent(MainActivity.this, ProfileFragment.class);
+                startActivity(i);
+                //startActivity(new Intent(MainActivity.this, ProfileFragment.class));
+                finish();
+            }
+        });
+
 
         btnSignOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                auth.signOut();
+                openDialog();
             }
         });
     }

@@ -13,15 +13,13 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.FoodOrderApp">
-
-<!--        <activity android:name=".MainActivity" >-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
         <activity android:name=".LoginAccount"/>
+        <activity android:name=".ui.profile.ProfileFragment"/>
+        <activity android:name=".profile.AboutApp"/>
+        <activity android:name=".profile.ProfileCustomer"/>
+        <activity android:name=".profile.ContactDev"/>
+        <activity android:name=".profile.OrderHistory"/>
+        <activity android:name=".profile.PaymentHistory"/>
         <activity android:name=".CreateAccount"/>
         <activity android:name=".OrderSucceessActivity" />
         <activity android:name=".PlaceYourOrderActivity" />

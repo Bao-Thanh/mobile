@@ -23,16 +23,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.FoodOrderApp"
         android:usesCleartextTraffic="true" >
-
-        <!-- <activity android:name=".MainActivity" > -->
-        <!-- <intent-filter> -->
-        <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-        <!-- </intent-filter> -->
-        <!-- </activity> -->
         <activity android:name="com.android.foodorderapp.LoginAccount" />
+        <activity android:name="com.android.foodorderapp.ui.profile.ProfileFragment" />
+        <activity android:name="com.android.foodorderapp.profile.AboutApp" />
+        <activity android:name="com.android.foodorderapp.profile.ProfileCustomer" />
+        <activity android:name="com.android.foodorderapp.profile.ContactDev" />
+        <activity android:name="com.android.foodorderapp.profile.OrderHistory" />
+        <activity android:name="com.android.foodorderapp.profile.PaymentHistory" />
         <activity android:name="com.android.foodorderapp.CreateAccount" />
         <activity android:name="com.android.foodorderapp.OrderSucceessActivity" />
         <activity android:name="com.android.foodorderapp.PlaceYourOrderActivity" />

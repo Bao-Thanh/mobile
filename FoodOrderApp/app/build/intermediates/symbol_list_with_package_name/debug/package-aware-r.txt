@@ -605,6 +605,23 @@ attr listPreferredItemPaddingRight
 attr listPreferredItemPaddingStart
 attr logo
 attr logoDescription
+attr lottieAnimationViewStyle
+attr lottie_autoPlay
+attr lottie_cacheComposition
+attr lottie_colorFilter
+attr lottie_enableMergePathsForKitKatAndAbove
+attr lottie_fallbackRes
+attr lottie_fileName
+attr lottie_imageAssetsFolder
+attr lottie_loop
+attr lottie_progress
+attr lottie_rawRes
+attr lottie_renderMode
+attr lottie_repeatCount
+attr lottie_repeatMode
+attr lottie_scale
+attr lottie_speed
+attr lottie_url
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogTheme
 attr materialAlertDialogTitleIconStyle
@@ -1712,6 +1729,7 @@ drawable pro_pic_demo
 drawable profile_info_36
 drawable round_corner
 drawable round_corner_hollow
+drawable sea_round_corner
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1797,12 +1815,14 @@ id all
 id always
 id animateToEnd
 id animateToStart
+id animation_view
 id asConfigured
 id async
 id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id automatic
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -1817,6 +1837,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnLoggout
+id btnProfile
 id buttonCheckout
 id buttonDone
 id buttonPanel
@@ -1887,6 +1908,7 @@ id easeOut
 id edit_query
 id email
 id emailInput
+id email_login_form
 id end
 id enterAlways
 id enterAlwaysCollapsed
@@ -1915,9 +1937,11 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id hardware
 id hideable
 id home
 id homeAsUp
+id homepageProfile
 id honorRequest
 id icon
 id icon_group
@@ -1961,8 +1985,9 @@ id linearl7
 id linearl8
 id listMode
 id list_item
-id loggoutHeader
 id loginButton
+id login_form
+id lottie_layer_name
 id masked
 id masterLayout
 id menuName
@@ -2035,6 +2060,7 @@ id phno
 id pin
 id position
 id postLayout
+id problem_description
 id profileName
 id profilePicture
 id progress_circular
@@ -2043,9 +2069,11 @@ id radio
 id ratio
 id rectangles
 id recyclerView
+id restart
 id restaurantAddress
 id restaurantHours
 id restaurantName
+id reverse
 id reverseSawtooth
 id right
 id right_icon
@@ -2075,6 +2103,8 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id sendmail
+id severityspinner
 id shortcut
 id showCustom
 id showHome
@@ -2087,6 +2117,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id software
 id spacer
 id spline
 id split_action_bar
@@ -2166,11 +2197,20 @@ id tvSubtotalAmount
 id tvTotal
 id tvTotalAmount
 id tvTotalItems
+id uProgress
+id uaddress
+id ufirstname
+id ulastname
 id unchecked
 id uniform
 id unlabeled
 id up
+id updateButton
+id uphno
 id useLogo
+id user_name
+id ustk
+id verifyemail
 id view_offset_helper
 id visible
 id visible_removing_fragment_view_tag
@@ -2243,11 +2283,16 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout action_bar
+layout activity_about_app
+layout activity_contact_developer
 layout activity_create_account
 layout activity_login
 layout activity_main
+layout activity_order_history
 layout activity_order_succeess
+layout activity_payment_history
 layout activity_place_your_order
+layout activity_profile_customer
 layout activity_restaurant_menu
 layout activity_splash
 layout browser_actions_context_menu_page
@@ -2328,6 +2373,7 @@ menu actionbarmenu
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap orderedapplogo
 navigation mobilec_navigation
 plurals mtrl_badge_content_description
 raw keep
@@ -2361,6 +2407,9 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string about
+string about_para1
+string about_para10
+string about_para11
 string address
 string app_name
 string appbar_scrolling_view_behavior
@@ -2394,6 +2443,7 @@ string create_n_account
 string create_n_s_account
 string default_web_client_id
 string design
+string detailaboutproblem
 string email
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -2479,13 +2529,19 @@ string receive_link
 string register
 string reset_pass
 string search_menu_title
+string sendmail
+string sevofproblem
 string shop_name
 string signup_login_hint
 string status_bar_notification_info_overflow
+string tellproblem
 string title_home
 string title_profile
 string title_search
+string updansave
+string update_det
 string valid_numberaccount
+string verifyemail
 string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
@@ -3260,6 +3316,7 @@ styleable LinearLayoutCompat android_gravity android_orientation android_baselin
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
+styleable LottieAnimationView lottie_autoPlay lottie_cacheComposition lottie_colorFilter lottie_enableMergePathsForKitKatAndAbove lottie_fallbackRes lottie_fileName lottie_imageAssetsFolder lottie_loop lottie_progress lottie_rawRes lottie_renderMode lottie_repeatCount lottie_repeatMode lottie_scale lottie_speed lottie_url
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType
