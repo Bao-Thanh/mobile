@@ -60,7 +60,8 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="05dp"
             android:layout_marginBottom="05dp"
-            android:hint="Tên của bạn"/>
+            android:hint="Tên của bạn"
+            android:editable="false"/>
 
         <EditText android:id="@+id/inputAddress"
             android:layout_width="match_parent"
@@ -72,7 +73,8 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="05dp"
             android:layout_marginBottom="05dp"
-            android:hint="Địa chỉ"
+            android:hint="Địa chỉ (có thể bỏ qua)"
+            android:editable="false"
             android:visibility="gone"/>
 
         <EditText android:id="@+id/inputCity"
@@ -101,7 +103,7 @@
             android:hint="Quận/Huyện/TP"
             android:visibility="gone"/>
 
-        <EditText android:id="@+id/inputZip"
+        <EditText android:id="@+id/inputNumberAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
@@ -111,7 +113,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="05dp"
             android:layout_marginBottom="05dp"
-            android:hint="Mã zip"
+            android:hint="Số nhà"
             android:inputType="number"
             android:maxLength="5"
             android:visibility="gone"/>
@@ -121,7 +123,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputZip"
+            app:layout_constraintTop_toBottomOf="@+id/inputNumberAddress"
             android:layout_margin="10dp"
             android:text="Thông tin thẻ"
             android:textSize="18sp"
@@ -138,10 +140,9 @@
             android:layout_marginTop="05dp"
             android:layout_marginBottom="05dp"
             android:hint="Số thẻ"
-            android:inputType="number"
-            android:maxLength="16"/>
+            android:editable="false"/>
 
-        <EditText android:id="@+id/inputCardExpiry"
+        <EditText android:id="@+id/inputPhno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
@@ -151,30 +152,27 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="05dp"
             android:layout_marginBottom="05dp"
-            android:hint="Ngày phát hành (mm/yyyy)"
-            android:inputType="number"
-            android:maxLength="6"/>
+            android:hint="Số điện thoại (LKST)"
+            android:editable="false"/>
 
-        <EditText android:id="@+id/inputCardPin"
+        <EditText android:id="@+id/inputEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/inputCardExpiry"
+            app:layout_constraintTop_toBottomOf="@id/inputPhno"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="05dp"
             android:layout_marginBottom="05dp"
-            android:hint="Mã PIN(3 số)"
-            android:inputType="number"
-            android:maxLength="3"/>
+            android:editable="false"/>
 
         <TextView android:id="@+id/tvTotalItems"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputCardPin"
+            app:layout_constraintTop_toBottomOf="@+id/inputEmail"
             android:layout_margin="10dp"
             android:text="Danh sách món"
             android:textSize="18sp"
@@ -205,7 +203,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cartItemsRecyclerView"
             android:layout_margin="10dp"
-            android:text="$0.0"
+            android:text="0 VND"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -225,7 +223,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvSubtotal"
             android:layout_margin="10dp"
-            android:text="$0.0"
+            android:text="0 VND"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -245,7 +243,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvDeliveryCharge"
             android:layout_margin="10dp"
-            android:text="$0.0"
+            android:text="0 VND"
             android:textSize="18sp"
             android:textStyle="bold"/>
 

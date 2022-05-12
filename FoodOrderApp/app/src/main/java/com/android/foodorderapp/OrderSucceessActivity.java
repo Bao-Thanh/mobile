@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.android.foodorderapp.model.RestaurantModel;
@@ -26,6 +27,14 @@ public class OrderSucceessActivity extends AppCompatActivity {
 
         TextView buttonDone = findViewById(R.id.buttonDone);
         buttonDone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        Button btnHome = findViewById(R.id.backtomenu);
+        btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();

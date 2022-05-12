@@ -1,5 +1,6 @@
 package com.android.foodorderapp.model;
 
+import android.icu.text.DecimalFormat;
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -15,6 +16,16 @@ public class Menu implements Parcelable {
 
     public void setTotalInCart(int totalInCart) {
         this.totalInCart = totalInCart;
+    }
+
+    //Constructor
+
+
+    public Menu(String name, float price, int totalInCart, String url) {
+        this.name = name;
+        this.price = price;
+        this.totalInCart = totalInCart;
+        this.url = url;
     }
 
     protected Menu(Parcel in) {
@@ -58,6 +69,11 @@ public class Menu implements Parcelable {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public String toVND(float value) {
+        DecimalFormat formatter = new DecimalFormat("###,###,###");
+        return formatter.format(value);
     }
 
     @Override

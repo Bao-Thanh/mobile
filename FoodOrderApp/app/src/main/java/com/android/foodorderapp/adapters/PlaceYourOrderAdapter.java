@@ -39,7 +39,9 @@ public class PlaceYourOrderAdapter extends RecyclerView.Adapter<PlaceYourOrderAd
     @Override
     public void onBindViewHolder(@NonNull PlaceYourOrderAdapter.MyViewHolder holder, int position) {
         holder.menuName.setText(menuList.get(position).getName());
-        holder.menuPrice.setText("Giá: $"+String.format("%.2f", menuList.get(position).getPrice()*menuList.get(position).getTotalInCart()));
+        float priceVND = menuList.get(position).getPrice() * menuList.get(position).getTotalInCart();
+        String VND = menuList.get(position).toVND(priceVND);
+        holder.menuPrice.setText("Giá: "+ VND + " VND");
         holder.menuQty.setText("Số lượng: " + menuList.get(position).getTotalInCart());
         Glide.with(holder.thumbImage)
                 .load(menuList.get(position).getUrl())

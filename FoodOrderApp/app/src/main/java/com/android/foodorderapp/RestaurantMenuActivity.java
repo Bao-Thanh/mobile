@@ -45,11 +45,11 @@ public class RestaurantMenuActivity extends AppCompatActivity implements MenuLis
         initRecyclerView();
 
 
-         buttonCheckout = findViewById(R.id.buttonCheckout);
+        buttonCheckout = findViewById(R.id.buttonCheckout);
         buttonCheckout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(itemsInCartList != null && itemsInCartList.size() <= 0) {
+                if(itemsInCartList == null || itemsInCartList.size() <= 0) {
                     Toast.makeText(RestaurantMenuActivity.this, "Bạn chưa chọn món ăn kìa!!!.", Toast.LENGTH_SHORT).show();
                     return;
                 }

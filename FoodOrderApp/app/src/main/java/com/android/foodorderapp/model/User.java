@@ -1,6 +1,9 @@
 package com.android.foodorderapp.model;
 
 public class User {
+//    Chưa sử dụng
+
+
     private String uid;
     private String email;
     private String password;

@@ -2,7 +2,7 @@
     {
       "name":"Nhà hàng Phương Nam",
       "address":"TP. Thủ Đức, TP. HCM",
-      "delivery_charge": 5,
+      "delivery_charge": 30000,
       "image":"https://ttagencyads.com/wp-content/uploads/2021/06/logo-2.jpg",
 
       "hours":{
@@ -17,52 +17,52 @@
       "menus": [
         {
           "name": "Spaghetti",
-          "price": 10.00,
+          "price": 460000,
           "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/7/17/1/FN_Simple-Spaghetti-with-Tomato-Sauce_s4x3.jpg.rend.hgtvcom.826.620.suffix/1408069256188.jpeg"
         },
         {
           "name": "Spaghettios Pizza",
-          "price": 13.99,
+          "price": 322000,
           "url": "https://lh3.googleusercontent.com/p/AF1QipN-WboPX7pEgnNqg78wranzezsGMdPfwCoxQjdJ=s1280-p-no-v1"
         },
         {
           "name": "Chocolate Pizza",
-          "price": 4.99,
+          "price": 115000,
           "url": "https://149366112.v2.pressablecdn.com/wp-content/uploads/2017/08/blah.jpg"
         },
         {
           "name": "Cheese Sticks",
-          "price": 5.49,
+          "price": 127000,
           "url": "https://www.spendwithpennies.com/wp-content/uploads/2013/10/Cheese-Sticks-SpendWithPennies-2-21-500x500.jpg"
         },
         {
           "name": "CHICKEN FINGER SANDWICH",
-          "price": 4.00,
+          "price": 92000,
           "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70461/image?density=3&height=300&width=420"
         },
         {
           "name": "FINGERZ BOXED LUNCH",
-          "price": 3.25,
+          "price": 75000,
           "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70463/image?density=3&height=300&width=420"
         },
         {
           "name": "HOUSE ZALAD BOXED",
-          "price": 5.49,
+          "price": 127000,
           "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70465/image?density=3&height=300&width=420"
         },
         {
           "name": "COBB ZALAD BOXED",
-          "price": 3.99,
+          "price": 92000,
           "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70468/image?density=3&height=300&width=420"
         },
         {
           "name": "COOKIE AND BROWNIE ",
-          "price": 8.09,
+          "price": 186000,
           "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70543/image?density=3&height=300&width=420"
         },
         {
           "name": "BROWNIE PLATTER",
-          "price": 6.49,
+          "price": 150000,
           "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70540/image?density=3&height=300&width=420"
         }
       ]
@@ -70,7 +70,7 @@
     {
       "name":"Nha hàng chay Thiền Ý",
       "address":"Quận 7, TP. HCM",
-      "delivery_charge": 4,
+      "delivery_charge": 50000,
       "image":"https://thietkeweb9999.com/data/upload/blog/logo/top-140-mau-logo-nha-hang-dep-thu-hut-thuc-khach17.jpg",
 
       "hours":{
@@ -85,57 +85,57 @@
       "menus": [
         {
           "name": "Hủ tiếu chay",
-          "price": 2.99,
+          "price": 69000,
           "url": "https://noiphodien123.vn/wp-content/uploads/2020/06/hu-tieu-chay-ngon.jpg"
         },
         {
           "name": "Cà tím xào chay",
-          "price": 3.59,
+          "price": 83000,
           "url": "https://minhhouseware.com.vn/wp-content/uploads/2020/12/ca-tim-xao-chay.jpg"
         },
         {
           "name": "Nấm bào ngư chiên",
-          "price": 5.44,
+          "price": 124000,
           "url": "https://minhhouseware.com.vn/wp-content/uploads/2020/12/nam-bao-ngu-chien.jpg"
         },
         {
           "name": "Canh hạt sen nấm",
-          "price": 2.00,
+          "price": 46000,
           "url": "https://minhhouseware.com.vn/wp-content/uploads/2020/12/canh_nam_hat_sen_2.png"
         },
         {
           "name": "Đậu Phụ Non Hấp Nấm Hương",
-          "price": 3.49,
+          "price": 81000,
           "url": "https://minhhouseware.com.vn/wp-content/uploads/2020/12/image_2020-12-07_142349.png"
         },
         {
           "name": "Canh chua chay",
-          "price": 4.95,
+          "price": 115000,
           "url": "https://minhhouseware.com.vn/wp-content/uploads/2020/12/canh-chua-chay-nam-rom.jpg"
         },
         {
           "name": "Nấm đùi gà xào cà tím",
-          "price": 3.59,
+          "price": 83000,
           "url": "https://minhhouseware.com.vn/wp-content/uploads/2020/12/dau-phu-kho-ca-tim-1.jpg"
         },
         {
           "name": "Đậu hủ xào sốt nấm",
-          "price": 5.49,
+          "price": 127000,
           "url": "https://minhhouseware.com.vn/wp-content/uploads/2020/12/dau-hu-xao-sot-nam.jpg"
         },
         {
           "name": "Đậu Phụ Chiên Sả Ớt",
-          "price": 3.99,
+          "price": 92000,
           "url": "https://minhhouseware.com.vn/wp-content/uploads/2020/12/dau-hu-chien-sa-ot.jpg"
         },
         {
           "name": "Nấm rơm kho tiêu",
-          "price": 8.29,
+          "price": 191000,
           "url": "https://minhhouseware.com.vn/wp-content/uploads/2020/12/nam-rom-kho-tieu.jpg"
         },
         {
           "name": "Trứng chay chiên giòn",
-          "price": 6.99,
+          "price": 161000,
           "url": "https://minhhouseware.com.vn/wp-content/uploads/2020/12/trung-chay-chien-gion.jpg"
         }
       ]
@@ -143,7 +143,7 @@
   {
     "name":"Nhà hàng Phở Spoon",
     "address":"Quận Bình Thạnh, TP. HCM",
-    "delivery_charge": 5,
+    "delivery_charge": 40000,
     "image":"https://thietkeweb9999.com/data/upload/blog/logo/top-140-mau-logo-nha-hang-dep-thu-hut-thuc-khach24.jpg",
     "hours":{
       "Sunday":"11:00 AM - 7:00 PM",
@@ -157,32 +157,32 @@
     "menus": [
       {
         "name": "Phở bò",
-        "price": 4.95,
+        "price": 115000,
         "url": "https://cdn.tgdd.vn/2021/06/content/phobo-800x450.jpg"
       },
       {
         "name": "Phở gà",
-        "price": 3.59,
+        "price": 81000,
         "url": "https://cdn.tgdd.vn/2021/06/content/phoga-800x450.jpg"
       },
       {
         "name": "Phở trộn",
-        "price": 5.49,
+        "price": 127000,
         "url": "https://cdn.tgdd.vn/2021/06/content/photron1-800x450.jpg"
       },
       {
         "name": "Phở vịt quay Lạng Sơn",
-        "price": 3.99,
+        "price": 124000,
         "url": "https://cdn.tgdd.vn/2021/06/content/phovitquay-800x450.jpg"
       },
       {
         "name": "Phở gạo lứt",
-        "price": 8.29,
+        "price": 191000,
         "url": "https://cdn.tgdd.vn/2021/06/content/phogaolut-800x450.jpg"
       },
       {
         "name": "Chén trứng gà",
-        "price": 6.99,
+        "price": 50000,
         "url": "https://saigonnhonews.com/wp-content/uploads/2021/04/tiet-pho-2.jpg"
       }
     ]
@@ -190,7 +190,7 @@
   {
     "name":"Tây Bắc Quán",
     "address":"Quận 3, TP. HCM",
-    "delivery_charge": 6,
+    "delivery_charge": 50000,
     "image":"https://thuatnguyencorp.com/public/media/1156876083tay-bac-quan-thiet-ke-logo.png",
     "hours":{
       "Sunday":"11:00 AM - 7:00 PM",
@@ -204,32 +204,32 @@
     "menus": [
       {
         "name": "CHICKEN FINGER SANDWICH",
-        "price": 4.00,
+        "price": 92000,
         "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70461/image?density=3&height=300&width=420"
       },
       {
         "name": "FINGERZ BOXED LUNCH",
-        "price": 3.25,
+        "price": 75000,
         "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70463/image?density=3&height=300&width=420"
       },
       {
         "name": "HOUSE ZALAD BOXED",
-        "price": 5.49,
+        "price": 127000,
         "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70465/image?density=3&height=300&width=420"
       },
       {
         "name": "COBB ZALAD BOXED",
-        "price": 3.99,
+        "price": 92000,
         "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70468/image?density=3&height=300&width=420"
       },
       {
         "name": "COOKIE AND BROWNIE ",
-        "price": 8.09,
+        "price": 186000,
         "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70543/image?density=3&height=300&width=420"
       },
       {
         "name": "BROWNIE PLATTER",
-        "price": 6.49,
+        "price": 15000,
         "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70540/image?density=3&height=300&width=420"
       }
     ]

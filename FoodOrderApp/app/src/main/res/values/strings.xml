@@ -61,4 +61,7 @@
     <string name="sevofproblem">Mức độ nghiêm trọng</string>
     <string name="detailaboutproblem">Chi tiết vấn đề mà bạn đang gặp phải:</string>
     <string name="sendmail">Send mail</string>
+    <!--    Placed-->
+    <string name="order_placed">Order placed!</string>
+    <string name="go_to_home">Go to Home</string>
 </resources>
