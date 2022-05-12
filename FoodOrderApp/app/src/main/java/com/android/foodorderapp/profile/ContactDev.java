@@ -96,7 +96,7 @@ public class ContactDev extends AppCompatActivity {
 
             emailIntent.setType("message/rfc822");
             //emailIntent.setClassName("com.google.android.gm", "com.google.android.gm.ComposeActivityGmail");
-            emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"19110252@student.hcmute.edu.com"});
+            emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"forevertrap2001@gmail.com"});
             emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Báo cáo mức độ nghiêm trọng: "+severity+" từ "+name);
             emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, desc);
             startActivity(Intent.createChooser(emailIntent, "Chọn một ứng dụng để gửi email"));

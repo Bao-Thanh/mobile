@@ -2,6 +2,7 @@ package com.android.foodorderapp.ui.profile;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.navigation.NavOptions;
+import androidx.navigation.Navigation;
+
 import com.android.foodorderapp.extras.LogoutDialog;
 
 import com.android.foodorderapp.MainActivity;
@@ -38,6 +42,7 @@ public class ProfileFragment extends Activity {
     private LinearLayout logoutProfile, aboutappProfile, profileCustomer,
             contactDev, orderHistory, paymentHistory;
     private final FirebaseFirestore db = FirebaseFirestore.getInstance();
+    View h, p ,nv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +57,10 @@ public class ProfileFragment extends Activity {
         contactDev = findViewById(R.id.linearl5);
         orderHistory = findViewById(R.id.linearl3);
         paymentHistory = findViewById(R.id.linearl4);
+        h = findViewById(R.id.navigation_home);
+        p = findViewById(R.id.navigation_profile);
+        //
+        p.setBackgroundColor(0xFF66ccff);
         //Checked signed
         //Firebase
         FirebaseAuth fAuth = FirebaseAuth.getInstance();
@@ -131,6 +140,24 @@ public class ProfileFragment extends Activity {
                 startActivity(i);
             }
         });
+
+        //profile again
+        p.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //do nothing
+            }
+        });
+
+        //navigator to home
+        h.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ProfileFragment.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
+
 
         //-end
     }

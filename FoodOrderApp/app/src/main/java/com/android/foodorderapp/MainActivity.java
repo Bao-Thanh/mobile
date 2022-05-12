@@ -4,13 +4,16 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
+import androidx.navigation.NavOptions;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -42,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements RestaurantListAda
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
     ImageButton btnSignOut, btnProfile;
+    View h, p;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +67,9 @@ public class MainActivity extends AppCompatActivity implements RestaurantListAda
         //find button on action_bar
         btnSignOut = findViewById(R.id.btnLoggout);
         btnProfile = findViewById(R.id.btnProfile);
-
+        h = findViewById(R.id.navigation_home);
+        p = findViewById(R.id.navigation_profile);
+        h.setBackgroundColor(0xFFccefff);
         //Recycle view for restaurant
         initRecyclerView(restaurantModelList);
 
@@ -105,6 +111,23 @@ public class MainActivity extends AppCompatActivity implements RestaurantListAda
                 openDialog();
             }
         });
+
+        h.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //do nothing
+            }
+        });
+
+        p.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, ProfileFragment.class);
+                startActivity(i);
+
+            }
+        });
+
     }
 
     //Select
