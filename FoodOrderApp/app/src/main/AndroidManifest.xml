@@ -14,6 +14,7 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.FoodOrderApp">
         <activity android:name=".LoginAccount"/>
+        <activity android:name=".forgot_password"/>
         <activity android:name=".ui.profile.ProfileFragment"/>
         <activity android:name=".profile.AboutApp"/>
         <activity android:name=".profile.ProfileCustomer"/>

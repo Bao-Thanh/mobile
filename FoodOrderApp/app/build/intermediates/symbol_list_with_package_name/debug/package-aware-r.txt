@@ -1662,6 +1662,8 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_bg
+drawable button_bg_or
+drawable button_bg_orange
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1836,6 +1838,9 @@ id all
 id always
 id animateToEnd
 id animateToStart
+id animationView
+id animationView2
+id animationView3
 id animation_view
 id asConfigured
 id async
@@ -1844,6 +1849,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id automatic
+id backtolgLink
 id backtomenu
 id barrier
 id baseline
@@ -2104,6 +2110,9 @@ id received
 id rectangles
 id recyclerView
 id recycler_order_history
+id recycler_payment_history
+id resetProgressBar
+id resetemailInput
 id restart
 id restaurantAddress
 id restaurantHours
@@ -2140,6 +2149,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id sendmail
+id sentmailButton
 id severityspinner
 id shortcut
 id showCustom
@@ -2332,6 +2342,7 @@ layout action_bar
 layout activity_about_app
 layout activity_contact_developer
 layout activity_create_account
+layout activity_forgot_password
 layout activity_login
 layout activity_main
 layout activity_order_history
@@ -2431,6 +2442,7 @@ layout text_view_without_line_height
 menu actionbarmenu
 menu bottom_nav_menu
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap orderedapplogo
 navigation mobilec_navigation

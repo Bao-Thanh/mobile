@@ -78,7 +78,6 @@ public class OrderListApdater extends RecyclerView.Adapter<OrderListApdater.MyVi
             public void onClick(View v) {
                 //click
                 Intent i = new Intent(context, ViewOrderDetail.class);
-                Bundle bundle = new Bundle();
                 i.putExtra("isFinish", isFinish);
                 i.putExtra("orderid",orderid);
                 i.putExtra("userid", userid);

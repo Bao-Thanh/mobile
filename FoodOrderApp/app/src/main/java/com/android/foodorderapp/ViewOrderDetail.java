@@ -42,8 +42,11 @@ public class ViewOrderDetail extends AppCompatActivity {
     final FirebaseFirestore db = FirebaseFirestore.getInstance();
     private FirebaseAuth fAuth;
     //Get extra
-    private String isFinish, orderid, sfname, stp, sqh, ssn, sstk, sphno, semail, sstatus, sotp, ssub, stotal, sdeli;
+    private String isDone, isFinish, orderid, sfname, stp, sqh, ssn, sstk, sphno, semail, sstatus, sotp, ssub, stotal, sdeli;
     private List<Menu> orderMenu = new ArrayList<Menu>();
+
+    //For payment
+    private TextView txtOtp, desciptotp;
 
 
     @Override
@@ -67,10 +70,14 @@ public class ViewOrderDetail extends AppCompatActivity {
         tvDeliveryChargeAmount = findViewById(R.id.tvDeliveryChargeAmount);
         tvDeliveryCharge = findViewById(R.id.tvDeliveryCharge);
         tvTotalAmount = findViewById(R.id.tvTotalAmount);
-        tvOtp = findViewById(R.id.sotp);
-        buttonPlaceYourOrder = findViewById(R.id.received);
         switchDelivery = findViewById(R.id.switchDelivery);
         cartItemsRecyclerView = findViewById(R.id.cartItemsRecyclerView);
+
+        buttonPlaceYourOrder = findViewById(R.id.received);
+        //for payment
+        tvOtp = findViewById(R.id.sotp);
+        txtOtp = findViewById(R.id.textOtp);
+        desciptotp = findViewById(R.id.descriptotp);
         //Get intent extra and binding
         isFinish = getIntent().getStringExtra("isFinish");
         orderid = getIntent().getStringExtra("orderid");
@@ -90,6 +97,10 @@ public class ViewOrderDetail extends AppCompatActivity {
         //Binding in view
         if (isFinish.equals("1")) {
             tvIsFinish.setVisibility(View.VISIBLE);
+            txtOtp.setVisibility(View.GONE);
+            tvOtp.setVisibility(View.GONE);
+            desciptotp.setVisibility(View.GONE);
+            buttonPlaceYourOrder.setVisibility(View.GONE);
         }
         inputAddress.setText("Việt Nam");
         inputName.setText(sfname);

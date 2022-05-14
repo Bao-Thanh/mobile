@@ -35,7 +35,7 @@
         android:textAlignment="textStart"
         android:text="Danh sách nhà hàng"
         android:textAppearance="?android:attr/textAppearanceMediumInverse"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/white"
         android:textStyle="bold" />
 
 

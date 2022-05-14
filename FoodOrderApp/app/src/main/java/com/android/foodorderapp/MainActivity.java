@@ -63,10 +63,11 @@ public class MainActivity extends AppCompatActivity implements RestaurantListAda
         //Slider show
         ImageSlider slider= findViewById(R.id.slider);
         List<SlideModel> sliderModels= new ArrayList<>();
-        sliderModels.add(new SlideModel("https://images.ctfassets.net/uq0sg0aynn6a/5pmGn9gZkkEU0q2QgEg2UQ/868c5ce0ba28e3b9e076dcbd86f3ebb5/Slogans.jpg"));
-        sliderModels.add(new SlideModel("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1b15f428269001.560529641bceb.jpg"));
-        sliderModels.add(new SlideModel("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cde33828269007.560529826adfd.jpg"));
-        sliderModels.add(new SlideModel("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b0e8c728269003.5605296426097.jpg"));
+        sliderModels.add(new SlideModel("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzAjwWndhgbdClEpHJcKJWBB-bUB8mhfX8pg&usqp=CAU"));
+        sliderModels.add(new SlideModel("https://i.etsystatic.com/14993754/r/il/9e92a7/1260487993/il_fullxfull.1260487993_b700.jpg"));
+        sliderModels.add(new SlideModel("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f6500853536975.5937f720be83e.png"));
+        sliderModels.add(new SlideModel("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1ab6c353536975.5937f720bee80.png"));
+        sliderModels.add(new SlideModel("https://i.ytimg.com/vi/nVfE0G19KaI/maxresdefault.jpg"));
         slider.setImageList(sliderModels, true);
 
         //find button on action_bar

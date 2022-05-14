@@ -60,7 +60,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="Thêm món"
-            android:background="@drawable/button_bg"
+            android:background="@drawable/button_bg_or"
             android:layout_margin="10dp"
             android:padding="10dp"
             android:gravity="center_horizontal"
@@ -79,7 +79,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/ic_remove_circle"
-                app:tint="@color/purple_700"
+                app:tint="#0F888C"
                 />
 
 
@@ -99,7 +99,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/ic_add_circle"
-                app:tint="@color/purple_700"
+                app:tint="#6BBD4C"
                 />
 
 

@@ -24,6 +24,7 @@
         android:theme="@style/Theme.FoodOrderApp"
         android:usesCleartextTraffic="true" >
         <activity android:name="com.android.foodorderapp.LoginAccount" />
+        <activity android:name="com.android.foodorderapp.forgot_password" />
         <activity android:name="com.android.foodorderapp.ui.profile.ProfileFragment" />
         <activity android:name="com.android.foodorderapp.profile.AboutApp" />
         <activity android:name="com.android.foodorderapp.profile.ProfileCustomer" />

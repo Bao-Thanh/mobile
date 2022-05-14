@@ -78,7 +78,9 @@ public class OrderHistory extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     Orders order = dataSnapshot.getValue(Orders.class);
-                    list.add(order);
+                    if (order.getIsFinish() == 0) {
+                        list.add(order);
+                    }
                 }
                 myApdapter.notifyDataSetChanged();
             }

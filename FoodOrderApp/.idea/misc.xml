@@ -21,6 +21,8 @@
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1785" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable-v24/sea_round_corner.xml" value="0.1" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable/button_bg.xml" value="0.1785" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable/button_bg_or.xml" value="0.1" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable/button_bg_orange.xml" value="0.1" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable/ic_add_circle.xml" value="0.1785" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable/ic_fsplash.xml" value="0.1785" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable/ic_login_bk.xml" value="0.1785" />
@@ -29,11 +31,13 @@
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable/round_corner.xml" value="0.1" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/drawable/round_corner_hollow.xml" value="0.1" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/font/nunito.xml" value="0.1" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/acitivity_forgot_password.xml" value="0.20244565217391305" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/acitivity_profile_customer.xml" value="0.12360688956433637" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/action_bar.xml" value="0.2" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_about_app.xml" value="0.25416666666666665" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_contact_developer.xml" value="0.17255434782608695" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_create_account.xml" value="0.1" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_forgot_password.xml" value="0.20244565217391305" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_login.xml" value="0.1911231884057971" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_main.xml" value="0.1911231884057971" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_order_history.xml" value="0.11827956989247312" />
@@ -42,8 +46,9 @@
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_place_your_order.xml" value="0.264" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_profile_customer.xml" value="0.1574074074074074" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_restaurant_menu.xml" value="0.1911231884057971" />
-        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_splash.xml" value="0.1911231884057971" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_view_order.xml" value="0.264" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_view_payment.xml" value="0.25416666666666665" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/menu_recycler_row.xml" value="0.175" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/place_order_recycler_row.xml" value="0.25416666666666665" />
