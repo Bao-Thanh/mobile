@@ -53,9 +53,12 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.3.4'
     //firebase
     implementation platform('com.google.firebase:firebase-bom:30.0.0')
+    implementation 'com.firebaseui:firebase-ui-database:6.2.1'
     implementation 'com.google.firebase:firebase-database'
     implementation 'com.google.firebase:firebase-auth:19.3.1'
     //firebase google analytics (control have or not have)
     //implementation 'com.google.firebase:firebase-analytics'
+    //for slider banner
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.0.6'
 }
 apply plugin: 'com.google.gms.google-services'

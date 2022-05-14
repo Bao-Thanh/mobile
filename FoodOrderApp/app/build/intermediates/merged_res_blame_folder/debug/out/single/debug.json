@@ -1,0 +1,250 @@
+[
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\font_nunito.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\font\\nunito.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_create_account.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_create_account.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_sea_round_corner.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\sea_round_corner.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_myprofileicon.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\myprofileicon.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_navhome.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\navhome.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_nav_menu.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\navigation_mobilec_navigation.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\navigation\\mobilec_navigation.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_profile_info_36.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\profile_info_36.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_login_bk.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable\\ic_login_bk.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_logouticon.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\logouticon.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_login_shape_bk.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable\\login_shape_bk.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_fsplash.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable\\ic_fsplash.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_orderhistoryicon.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\orderhistoryicon.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_menu_recycler_row.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\menu_recycler_row.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\raw_restaurent.json.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\raw\\restaurent.json"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_paymenthistoryicon.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\paymenthistoryicon.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_recycle_row_order.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\recycle_row_order.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_profile.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_bg.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable\\button_bg.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_recycler_row.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\recycler_row.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_place_order_recycler_row.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\place_order_recycler_row.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_order_history_36.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\order_history_36.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\menu_actionbarmenu.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\menu\\actionbarmenu.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_remove_circle.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable\\ic_remove_circle.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_payment_history.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_payment_history.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_design_settings.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\design_settings.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_about_app.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_about_app.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_view_order.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_view_order.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_pro_pic_demo.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\pro_pic_demo.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_round_corner_hollow.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable\\round_corner_hollow.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_order_history.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_order_history.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_place_your_order.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_place_your_order.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_contact_developer.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_contact_developer.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_round_corner.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable\\round_corner.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_restaurant_menu.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_restaurant_menu.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_profile_customer.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_profile_customer.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_navprofile.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\navprofile.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_logouticonwhite.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\logouticonwhite.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_img.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\img.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_orderedapplogo.jpg.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\mipmap-hdpi\\orderedapplogo.jpg"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_devicon.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\devicon.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_order_succeess.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_order_succeess.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_add_circle.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable\\ic_add_circle.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_about_36.png.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\about_36.png"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_action_bar.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\action_bar.xml"
+    }
+]

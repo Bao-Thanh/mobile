@@ -19,6 +19,9 @@ public class Menu implements Parcelable {
     }
 
     //Constructor
+    public Menu() {
+        // Default constructor required for calls to DataSnapshot.getValue()
+    }
 
 
     public Menu(String name, float price, int totalInCart, String url) {

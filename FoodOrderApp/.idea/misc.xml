@@ -36,16 +36,18 @@
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_create_account.xml" value="0.1" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_login.xml" value="0.1911231884057971" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_main.xml" value="0.1911231884057971" />
-        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_order_history.xml" value="0.17255434782608695" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_order_history.xml" value="0.11827956989247312" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_order_succeess.xml" value="0.2210144927536232" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_payment_history.xml" value="0.17255434782608695" />
-        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_place_your_order.xml" value="0.1" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_place_your_order.xml" value="0.264" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_profile_customer.xml" value="0.1574074074074074" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_restaurant_menu.xml" value="0.1911231884057971" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_splash.xml" value="0.1911231884057971" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/activity_view_order.xml" value="0.264" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/menu_recycler_row.xml" value="0.175" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/place_order_recycler_row.xml" value="0.25416666666666665" />
+        <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/recycle_row_order.xml" value="0.20677083333333332" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/recycler_row.xml" value="0.1160081053698075" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/layout/test.xml" value="0.175" />
         <entry key="..\:/Appmobile/mobile/FoodOrderApp/app/src/main/res/menu/actionbarmenu.xml" value="0.17604166666666668" />

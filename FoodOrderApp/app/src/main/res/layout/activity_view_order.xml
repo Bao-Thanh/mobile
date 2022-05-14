@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewOrderDetail"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/isFinish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textFontWeight="501"
+            android:textColor="@color/teal_700"
+            android:text="ĐÃ THANH TOÁN!"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
+
+        <TextView android:id="@+id/tvCustomerDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:text="Chi tiết hóa đơn"
+            app:layout_constraintEnd_toEndOf="@+id/isFinish"
+            app:layout_constraintTop_toBottomOf="@+id/isFinish"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/tvPickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/switchDelivery"
+            app:layout_constraintTop_toBottomOf="@+id/tvCustomerDetails"
+            android:text="Tự lấy"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.SwitchCompat android:id="@+id/switchDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCustomerDetails"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView android:id="@+id/tvDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/switchDelivery"
+            app:layout_constraintTop_toBottomOf="@+id/tvCustomerDetails"
+            android:text="Giao hàng"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <EditText android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/switchDelivery"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:hint="Tên của bạn"
+            android:editable="false"/>
+
+        <EditText android:id="@+id/inputAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputName"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:hint="Địa chỉ (có thể bỏ qua)"
+            android:editable="false"
+            android:visibility="gone"/>
+
+        <EditText android:id="@+id/inputCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputAddress"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:hint="Thành phố (Khách hàng đến lấy)"
+            android:editable="false"
+            android:visibility="gone"/>
+
+        <EditText android:id="@+id/inputState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputCity"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:hint="Quận/Huyện - Phường (Khách hàng đến lấy)"
+            android:editable="false"
+            android:visibility="gone"/>
+
+        <EditText android:id="@+id/inputNumberAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputState"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:hint="Số nhà (Khách hàng đến lấy)"
+            android:editable="false"
+            android:visibility="gone"/>
+
+        <TextView android:id="@+id/tvCardDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputNumberAddress"
+            android:layout_margin="10dp"
+            android:text="Thông tin thẻ"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <EditText android:id="@+id/inputCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardDetails"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:hint="Số thẻ"
+            android:editable="false"/>
+
+        <EditText android:id="@+id/inputPhno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputCardNumber"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:hint="Số điện thoại (LKST)"
+            android:editable="false"/>
+
+        <EditText android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputPhno"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:editable="false"/>
+
+        <TextView android:id="@+id/tvTotalItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputEmail"
+            android:layout_margin="10dp"
+            android:text="Danh sách món"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartItemsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalItems"
+            android:nestedScrollingEnabled="false"/>
+
+        <TextView android:id="@+id/tvSubtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cartItemsRecyclerView"
+            android:layout_margin="10dp"
+            android:text="Đơn giá"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/tvSubtotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cartItemsRecyclerView"
+            android:layout_margin="10dp"
+            android:text="0 VND"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/tvDeliveryCharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSubtotal"
+            android:layout_margin="10dp"
+            android:text="Phí vận chuyển"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/tvDeliveryChargeAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSubtotal"
+            android:layout_margin="10dp"
+            android:text="0 VND"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeliveryCharge"
+            android:layout_margin="10dp"
+            android:text="Tổng cộng"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/tvTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeliveryCharge"
+            android:layout_margin="10dp"
+            android:text="0 VND"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalAmount"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="(OTP)"/>
+        <TextView
+            android:id="@+id/sotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textOtp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:layout_marginTop="10dp"
+            android:text="1041"/>
+        <TextView
+            android:id="@+id/descriptotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sotp"
+            android:textColor="@color/grey"
+            android:layout_marginTop="10dp"
+            android:text="@string/descripforOTP"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/received"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptotp"
+            android:textColor="@color/black"
+            android:background="@drawable/round_corner_hollow"
+            android:paddingStart="20sp"
+            android:paddingEnd="20sp"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="Mark order as received"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

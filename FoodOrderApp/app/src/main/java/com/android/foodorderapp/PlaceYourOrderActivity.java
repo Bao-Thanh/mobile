@@ -10,6 +10,7 @@ import androidx.appcompat.widget.SwitchCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.icu.text.DecimalFormat;
@@ -34,16 +35,15 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
 public class PlaceYourOrderActivity extends AppCompatActivity {
-    double randomOrderIds;
-    int quantity;
-    float aprice, atotalprice;
-    String typedelivery, apicture;
+
     private EditText inputName, inputAddress, inputCity, inputState, inputNumberAddress,inputCardNumber, inputPhno, inputEmail ;
     private RecyclerView cartItemsRecyclerView;
     private TextView tvSubtotalAmount, tvDeliveryChargeAmount, tvDeliveryCharge, tvTotalAmount, buttonPlaceYourOrder;
@@ -53,7 +53,13 @@ public class PlaceYourOrderActivity extends AppCompatActivity {
     //for data binding
     private String userid;
     private String sfirstname, slastname, semail, sphno, sstk, sfullname;
+    //For order;
     List<Menu> cmenu = new ArrayList<Menu>();
+    private String dateTime, orderAt;
+    String uniqueorderID;
+    float atotalprice, subTotal;
+    float adelivery = 0;
+    String typedelivery, otp, image;
     //Firebase
     private FirebaseAuth fAuth;
     private DatabaseReference mDatabase;
@@ -65,13 +71,17 @@ public class PlaceYourOrderActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_place_your_order);
-
+        //Add action bar
         RestaurantModel restaurantModel = getIntent().getParcelableExtra("RestaurantModel");
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle(restaurantModel.getName());
         actionBar.setSubtitle(restaurantModel.getAddress());
         actionBar.setDisplayHomeAsUpEnabled(true);
-
+        //create date;
+        Calendar calender= Calendar.getInstance();
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat simpleDateFormat=new SimpleDateFormat(" EEEE, dd-MM-yyyy hh:mm:ss a");
+        dateTime = simpleDateFormat.format(calender.getTime());
+        //find view
         inputName = findViewById(R.id.inputName);
         inputAddress = findViewById(R.id.inputAddress);
         inputCity = findViewById(R.id.inputCity);
@@ -155,13 +165,15 @@ public class PlaceYourOrderActivity extends AppCompatActivity {
     }
 
 
-    //Convert
+    //Convert to VND format
     public String toVND(float value) {
         DecimalFormat formatter = new DecimalFormat("###,###,###");
         return formatter.format(value);
     }
 
     private void calculateTotalAmount(RestaurantModel restaurantModel) {
+        orderAt = restaurantModel.getName();
+        image = restaurantModel.getImage();
         float subTotalAmount = 0f;
         int i = 0;
         for(Menu m : restaurantModel.getMenus()) {
@@ -169,13 +181,15 @@ public class PlaceYourOrderActivity extends AppCompatActivity {
             cmenu.add(smenu);
             subTotalAmount += m.getPrice() * m.getTotalInCart();
         }
-        atotalprice = subTotalAmount;
+        subTotal = subTotalAmount;
         tvSubtotalAmount.setText(toVND(subTotalAmount) + " VND");
         if(isDeliveryOn) {
             tvDeliveryChargeAmount.setText(toVND(restaurantModel.getDelivery_charge()) +" VND");
             subTotalAmount += restaurantModel.getDelivery_charge();
-            atotalprice = subTotalAmount;
+
         }
+        atotalprice = subTotalAmount;
+        adelivery = restaurantModel.getDelivery_charge();
         tvTotalAmount.setText(toVND(subTotalAmount) + " VND");
     }
 
@@ -202,28 +216,26 @@ public class PlaceYourOrderActivity extends AppCompatActivity {
         }
         //start success activity..
         //Add order detail in to Database
+        uniqueorderID = UUID.randomUUID().toString();
+        int random_int = (int)Math.floor(Math.random()*1000000);
+        otp = String.valueOf(random_int);
         DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("orders").child(userid);
-        String uniqueorderID = UUID.randomUUID().toString();
         //set status delivery
-        if (!isDeliveryOn) { typedelivery = "Get"; } else { typedelivery = "Delivery";}
+        if (!isDeliveryOn) { typedelivery = "Placed"; } else { typedelivery = "Delivered";}
         //Create object
         Orders order = new Orders(uniqueorderID, userid, sfullname,
                 sphno, semail,
                 inputCity.getText().toString(),
                 inputState.getText().toString(),
                 inputNumberAddress.getText().toString(),
-                sstk, cmenu, atotalprice, typedelivery);
+                sstk,orderAt, image, cmenu, adelivery,
+                atotalprice, typedelivery, dateTime, otp, subTotal, 0);
 
 
         //push order
         mDatabase.child(uniqueorderID).setValue(order);
 
-
-
-
-
-
-
+        //
         Intent i = new Intent(PlaceYourOrderActivity.this, OrderSucceessActivity.class);
         i.putExtra("RestaurantModel", restaurantModel);
         startActivityForResult(i, 1000);

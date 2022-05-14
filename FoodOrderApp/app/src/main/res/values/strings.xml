@@ -64,4 +64,6 @@
     <!--    Placed-->
     <string name="order_placed">Order placed!</string>
     <string name="go_to_home">Go to Home</string>
+    <!--    For otp-->
+    <string name="descripforOTP">Gửi mã phía trên (OTP) cho người vận chuyển hoặc cửa hàng để xác thực người dùng!</string>
 </resources>

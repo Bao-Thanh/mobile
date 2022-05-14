@@ -24,6 +24,8 @@ import android.widget.ImageButton;
 import com.android.foodorderapp.adapters.RestaurantListAdapter;
 import com.android.foodorderapp.model.RestaurantModel;
 import com.android.foodorderapp.ui.profile.ProfileFragment;
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -36,6 +38,7 @@ import java.io.Reader;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -51,19 +54,21 @@ public class MainActivity extends AppCompatActivity implements RestaurantListAda
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //find
-//        BottomNavigationView navView = findViewById(R.id.nav_view);
-//        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-//                R.id.navigation_home, R.id.navigation_profile).build();
-//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-//        NavigationUI.setupWithNavController(navView, navController);
 
         //Add action bar
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         actionBar.setCustomView(R.layout.action_bar);
         List<RestaurantModel> restaurantModelList =  getRestaurantData();
+        //Slider show
+        ImageSlider slider= findViewById(R.id.slider);
+        List<SlideModel> sliderModels= new ArrayList<>();
+        sliderModels.add(new SlideModel("https://images.ctfassets.net/uq0sg0aynn6a/5pmGn9gZkkEU0q2QgEg2UQ/868c5ce0ba28e3b9e076dcbd86f3ebb5/Slogans.jpg"));
+        sliderModels.add(new SlideModel("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1b15f428269001.560529641bceb.jpg"));
+        sliderModels.add(new SlideModel("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cde33828269007.560529826adfd.jpg"));
+        sliderModels.add(new SlideModel("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b0e8c728269003.5605296426097.jpg"));
+        slider.setImageList(sliderModels, true);
+
         //find button on action_bar
         btnSignOut = findViewById(R.id.btnLoggout);
         btnProfile = findViewById(R.id.btnProfile);

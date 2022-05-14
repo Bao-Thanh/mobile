@@ -18,15 +18,26 @@ public class Orders {
     private String sstk;
 
     //additional food detail
+    private String orderat;
+    private String image;
     private List<Menu> menu;
-    private float totalPrice;
+    private float fdelivery;
+    private float totalPrice, subTotal;
     private String status;
+    private String dateorder;
+    private String otp;
+    private int isFinish;
 
     //Constructor
+    public Orders() {
+        // Default constructor required for calls to DataSnapshot.getValue()
+    }
+
     public Orders(String orderid, String customerid, String fname,
                   String phno, String email, String thanhpho, String quanhuyen,
-                  String sonha, String sstk, List<Menu> menu,
-                  float totalPrice, String status) {
+                  String sonha, String sstk, String orderat, String image,
+                  List<Menu> menu, float fdelivery, float totalPrice,
+                  String status, String dateorder, String otp, float subTotal, int isFinish) {
         this.orderid = orderid;
         this.customerid = customerid;
         this.fname = fname;
@@ -36,12 +47,76 @@ public class Orders {
         this.quanhuyen = quanhuyen;
         this.sonha = sonha;
         this.sstk = sstk;
+        this.orderat = orderat;
+        this.image = image;
         this.menu = menu;
+        this.fdelivery = fdelivery;
         this.totalPrice = totalPrice;
         this.status = status;
+        this.dateorder = dateorder;
+        this.otp = otp;
+        this.subTotal = subTotal;
+        this.isFinish = isFinish;
     }
 
     //Getter setter
+
+
+    public int getIsFinish() {
+        return isFinish;
+    }
+
+    public void setIsFinish(int isFinish) {
+        this.isFinish = isFinish;
+    }
+
+    public float getSubTotal() {
+        return subTotal;
+    }
+
+    public void setSubTotal(float subTotal) {
+        this.subTotal = subTotal;
+    }
+
+    public float getFdelivery() {
+        return fdelivery;
+    }
+
+    public void setFdelivery(float fdelivery) {
+        this.fdelivery = fdelivery;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getOrderat() {
+        return orderat;
+    }
+
+    public void setOrderat(String orderat) {
+        this.orderat = orderat;
+    }
+
+    public String getDateorder() {
+        return dateorder;
+    }
+
+    public void setDateorder(String dateorder) {
+        this.dateorder = dateorder;
+    }
+
+    public String getOtp() {
+        return otp;
+    }
+
+    public void setOtp(String otp) {
+        this.otp = otp;
+    }
 
     public String getOrderid() {
         return orderid;
