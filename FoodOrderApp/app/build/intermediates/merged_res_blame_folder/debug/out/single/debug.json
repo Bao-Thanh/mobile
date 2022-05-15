@@ -216,12 +216,12 @@
         "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_order_succeess.xml.flat",
-        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_order_succeess.xml"
-    },
-    {
         "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_forgot_password.xml.flat",
         "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_order_succeess.xml.flat",
+        "source": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\src\\main\\res\\layout\\activity_order_succeess.xml"
     },
     {
         "merged": "E:\\Appmobile\\mobile\\FoodOrderApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",

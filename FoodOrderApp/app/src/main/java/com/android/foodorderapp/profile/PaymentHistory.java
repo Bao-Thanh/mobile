@@ -33,7 +33,6 @@ public class PaymentHistory extends AppCompatActivity {
     View itemView;
     ArrayList<Orders> list = new ArrayList<Orders>();
     private String userid;
-    private int isDone = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,10 +63,8 @@ public class PaymentHistory extends AppCompatActivity {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     Orders order = dataSnapshot.getValue(Orders.class);
                     if (order.getIsFinish() == 1) {
-                        isDone = 1;
                         list.add(order);
                     }
-
                 }
                 myApdapter.notifyDataSetChanged();
             }

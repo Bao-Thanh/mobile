@@ -3,12 +3,14 @@ package com.android.foodorderapp;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.android.foodorderapp.model.RestaurantModel;
+import com.android.foodorderapp.profile.OrderHistory;
 
 public class OrderSucceessActivity extends AppCompatActivity {
 
@@ -29,6 +31,8 @@ public class OrderSucceessActivity extends AppCompatActivity {
         buttonDone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent i = new Intent(OrderSucceessActivity.this, OrderHistory.class);
+                startActivity(i);
                 finish();
             }
         });
@@ -37,6 +41,7 @@ public class OrderSucceessActivity extends AppCompatActivity {
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 finish();
             }
         });

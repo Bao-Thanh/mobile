@@ -93,7 +93,6 @@ public class OrderListApdater extends RecyclerView.Adapter<OrderListApdater.MyVi
                 i.putExtra("totalPrice", stotalPrice);
                 i.putExtra("fdelivery", sdeliveryPrice);
                 i.putExtra("otp", sotp);
-                i.putExtra("OrderMenu", (Serializable) listExtra);
                 context.startActivity(i);
             }
         });

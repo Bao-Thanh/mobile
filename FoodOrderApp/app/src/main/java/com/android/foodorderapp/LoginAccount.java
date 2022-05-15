@@ -128,6 +128,7 @@ public class LoginAccount extends AppCompatActivity {
                             });
 
                         } else {
+                            passwordInput.setText("");
                             String errorMessage = Objects.requireNonNull(task.getException()).getMessage();
                             Toast.makeText(LoginAccount.this, "Error2: " + errorMessage, Toast.LENGTH_LONG).show();
                         }

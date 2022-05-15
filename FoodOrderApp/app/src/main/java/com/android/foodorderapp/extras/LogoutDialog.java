@@ -20,9 +20,9 @@ public class LogoutDialog extends AppCompatDialogFragment {
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder=new AlertDialog.Builder(getActivity());
-        builder.setTitle("Log Out?")
-                .setMessage("Are you sure want to log out?")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        builder.setTitle("Đăng xuất?")
+                .setMessage("Bạn có chắc chắn muốn đăng xuất?")
+                .setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         FirebaseAuth.getInstance().signOut();
@@ -32,7 +32,7 @@ public class LogoutDialog extends AppCompatDialogFragment {
 
                     }
                 })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Huỷ bỏ", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 

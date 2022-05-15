@@ -1,5 +1,6 @@
 package com.android.foodorderapp.profile;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -12,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.foodorderapp.R;
+import com.android.foodorderapp.ui.profile.ProfileFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -113,6 +115,8 @@ public class ProfileCustomer extends AppCompatActivity {
             else{
                 if(verifythis.equals(semail)) {
                     UpdateAccountInfo(updatefn, updateln, updatephno, updateadd, updatestk, semail);
+                    startActivity(new Intent(ProfileCustomer.this, ProfileFragment.class));
+                    finish();
                 }else{
                     Toast.makeText(getApplicationContext(),"Enter correct email",Toast.LENGTH_LONG).show();
                 }

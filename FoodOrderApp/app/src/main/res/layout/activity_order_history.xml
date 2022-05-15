@@ -16,6 +16,20 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"/>
+        <TextView android:id="@+id/buttonCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Thanh toán"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            />
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </LinearLayout>

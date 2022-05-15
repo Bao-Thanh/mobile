@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.icu.text.DecimalFormat;
 import android.os.Bundle;
@@ -30,7 +32,6 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -140,6 +141,7 @@ public class PlaceYourOrderActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked) {
+                    buttonPlaceYourOrder.setText("Giao hàng!");
                     inputAddress.setVisibility(View.VISIBLE);
                     inputCity.setVisibility(View.VISIBLE);
                     inputState.setVisibility(View.VISIBLE);
@@ -149,6 +151,7 @@ public class PlaceYourOrderActivity extends AppCompatActivity {
                     isDeliveryOn = true;
                     calculateTotalAmount(restaurantModel);
                 } else {
+                    buttonPlaceYourOrder.setText("Đặt thức ăn!");
                     inputAddress.setVisibility(View.GONE);
                     inputCity.setVisibility(View.GONE);
                     inputState.setVisibility(View.GONE);
@@ -174,11 +177,10 @@ public class PlaceYourOrderActivity extends AppCompatActivity {
     private void calculateTotalAmount(RestaurantModel restaurantModel) {
         orderAt = restaurantModel.getName();
         image = restaurantModel.getImage();
+        cmenu = restaurantModel.getMenus();
         float subTotalAmount = 0f;
         int i = 0;
         for(Menu m : restaurantModel.getMenus()) {
-            Menu smenu = new Menu(m.getName(), m.getPrice(),m.getTotalInCart(), m.getUrl());
-            cmenu.add(smenu);
             subTotalAmount += m.getPrice() * m.getTotalInCart();
         }
         subTotal = subTotalAmount;
@@ -194,51 +196,71 @@ public class PlaceYourOrderActivity extends AppCompatActivity {
     }
 
     private void onPlaceOrderButtonClick(RestaurantModel restaurantModel) {
-        if(isDeliveryOn && TextUtils.isEmpty(inputCity.getText().toString())) {
-            inputCity.setError("Thành phố ");
-            return;
-        }else if(isDeliveryOn && TextUtils.isEmpty(inputState.getText().toString())) {
-            inputState.setError("Quận/Huyện/TP");
-            return;
-        }else if(isDeliveryOn && TextUtils.isEmpty(inputNumberAddress.getText().toString())) {
-            inputNumberAddress.setError("Số nha");
-            return;
-        }
-        else if( TextUtils.isEmpty(inputCardNumber.getText().toString())) {
-            inputCardNumber.setError("Số thẻ ");
-            return;
-        }else if( TextUtils.isEmpty(inputPhno.getText().toString())) {
-            inputPhno.setError("Số điện thoại liên kết với số thẻ");
-            return;
-        }else if( TextUtils.isEmpty(inputEmail.getText().toString())) {
-            inputEmail.setError("Email liên kết với số thẻ");
-            return;
-        }
-        //start success activity..
-        //Add order detail in to Database
-        uniqueorderID = UUID.randomUUID().toString();
-        int random_int = (int)Math.floor(Math.random()*1000000);
-        otp = String.valueOf(random_int);
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("orders").child(userid);
-        //set status delivery
-        if (!isDeliveryOn) { typedelivery = "Placed"; } else { typedelivery = "Delivered";}
-        //Create object
-        Orders order = new Orders(uniqueorderID, userid, sfullname,
-                sphno, semail,
-                inputCity.getText().toString(),
-                inputState.getText().toString(),
-                inputNumberAddress.getText().toString(),
-                sstk,orderAt, image, cmenu, adelivery,
-                atotalprice, typedelivery, dateTime, otp, subTotal, 0);
+        //Khi người dùng nhắn đặt hàng thì show dialog
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Xác nhận mua hàng")
+                .setMessage("Bạn có chắc chắn muốn mua hàng?")
+                .setCancelable(false)
+                .setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // here you can add functions
+                        if(isDeliveryOn && TextUtils.isEmpty(inputCity.getText().toString())) {
+                            inputCity.setError("Thành phố ");
+                            return;
+                        }else if(isDeliveryOn && TextUtils.isEmpty(inputState.getText().toString())) {
+                            inputState.setError("Quận/Huyện/TP");
+                            return;
+                        }else if(isDeliveryOn && TextUtils.isEmpty(inputNumberAddress.getText().toString())) {
+                            inputNumberAddress.setError("Số nha");
+                            return;
+                        }
+                        else if( TextUtils.isEmpty(inputCardNumber.getText().toString())) {
+                            inputCardNumber.setError("Số thẻ ");
+                            return;
+                        }else if( TextUtils.isEmpty(inputPhno.getText().toString())) {
+                            inputPhno.setError("Số điện thoại liên kết với số thẻ");
+                            return;
+                        }else if( TextUtils.isEmpty(inputEmail.getText().toString())) {
+                            inputEmail.setError("Email liên kết với số thẻ");
+                            return;
+                        }
+                        //start success activity..
+                        //Add order detail in to Database
+                        uniqueorderID = UUID.randomUUID().toString();
+                        int random_int = (int)Math.floor(Math.random()*1000000);
+                        otp = String.valueOf(random_int);
+                        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("orders").child(userid);
+                        //set status delivery
+                        if (!isDeliveryOn) { typedelivery = "Placed"; } else { typedelivery = "Delivered";}
+                        //Create object
+                        Orders order = new Orders(uniqueorderID, userid, sfullname,
+                                sphno, semail,
+                                inputCity.getText().toString(),
+                                inputState.getText().toString(),
+                                inputNumberAddress.getText().toString(),
+                                sstk,orderAt, image, cmenu, adelivery,
+                                atotalprice, typedelivery, dateTime, otp, subTotal, 0);
 
 
-        //push order
-        mDatabase.child(uniqueorderID).setValue(order);
+                        //push order
+                        mDatabase.child(uniqueorderID).setValue(order);
 
-        //
-        Intent i = new Intent(PlaceYourOrderActivity.this, OrderSucceessActivity.class);
-        i.putExtra("RestaurantModel", restaurantModel);
-        startActivityForResult(i, 1000);
+                        //
+                        Intent i = new Intent(PlaceYourOrderActivity.this, OrderSucceessActivity.class);
+                        i.putExtra("RestaurantModel", restaurantModel);
+                        startActivityForResult(i, 1000);
+
+
+                    }
+                })
+                .setNegativeButton("Huỷ bỏ", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.show();
+
     }
 
     private void initRecyclerView(RestaurantModel restaurantModel) {
@@ -275,5 +297,4 @@ public class PlaceYourOrderActivity extends AppCompatActivity {
         setResult(Activity.RESULT_CANCELED);
         finish();
     }
-
 }

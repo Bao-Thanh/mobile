@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.android.foodorderapp.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -104,14 +105,15 @@ public class CreateAccount extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             userid = Objects.requireNonNull(fAuth.getCurrentUser()).getUid();
-                            Map<String, Object> user = new HashMap<>();
-                            user.put("userid", userid);
-                            user.put("email", semail);
-                            user.put("firstname", sfirstname);
-                            user.put("lastname", slastname);
-                            user.put("phno", sphno);
-                            user.put("address", saddress);
-                            user.put("numberaccount", sstk);
+//                            Map<String, Object> user = new HashMap<>();
+//                            user.put("userid", userid);
+//                            user.put("email", semail);
+//                            user.put("firstname", sfirstname);
+//                            user.put("lastname", slastname);
+//                            user.put("phno", sphno);
+//                            user.put("address", saddress);
+//                            user.put("numberaccount", sstk);
+                            User user = new User(userid, semail, spassword, sfirstname, slastname, sphno, saddress,sstk);
 
 
                             //NEW

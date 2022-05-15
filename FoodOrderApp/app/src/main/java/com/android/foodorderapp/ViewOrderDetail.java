@@ -3,12 +3,14 @@ package com.android.foodorderapp;
 import android.content.Intent;
 import android.icu.text.DecimalFormat;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
@@ -17,10 +19,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.foodorderapp.adapters.PlaceYourOrderAdapter;
 import com.android.foodorderapp.model.Menu;
+import com.android.foodorderapp.model.Orders;
 import com.android.foodorderapp.model.RestaurantModel;
+import com.android.foodorderapp.profile.PaymentHistory;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -41,9 +48,11 @@ public class ViewOrderDetail extends AppCompatActivity {
     //Firebase
     final FirebaseFirestore db = FirebaseFirestore.getInstance();
     private FirebaseAuth fAuth;
+    DatabaseReference mDatabase;
+    //List menu
+    ArrayList<Menu> listMenu = new ArrayList<Menu>();
     //Get extra
-    private String isDone, isFinish, orderid, sfname, stp, sqh, ssn, sstk, sphno, semail, sstatus, sotp, ssub, stotal, sdeli;
-    private List<Menu> orderMenu = new ArrayList<Menu>();
+    private String isFinish, orderid, sfname, stp, sqh, ssn, sstk, sphno, semail, sstatus, sotp, ssub, stotal, sdeli;
 
     //For payment
     private TextView txtOtp, desciptotp;
@@ -53,9 +62,6 @@ public class ViewOrderDetail extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_order);
-        //call extras bundle
-        Intent bundle = getIntent();
-        orderMenu = (List<Menu>) bundle.getSerializableExtra("OrderMenu");
         //find view
         inputName = findViewById(R.id.inputName);
         inputAddress = findViewById(R.id.inputAddress);
@@ -119,6 +125,24 @@ public class ViewOrderDetail extends AppCompatActivity {
         }
         tvOtp.setText(sotp);
 
+        //Get real menu data
+        mDatabase = FirebaseDatabase.getInstance().getReference("orders").child(userid).child(orderid).child("menu");
+        mDatabase.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                    Menu menu = dataSnapshot.getValue(Menu.class);
+                    listMenu.add(menu);
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
 
         //Switch button Tự lấy - Giao hàng
         switchDelivery.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -143,7 +167,7 @@ public class ViewOrderDetail extends AppCompatActivity {
                 }
             }
         });
-        initRecyclerView(orderMenu);
+        initRecyclerView(listMenu);
         ////////////////Placed
         buttonPlaceYourOrder.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -151,6 +175,16 @@ public class ViewOrderDetail extends AppCompatActivity {
                 DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
                 mDatabase.child("orders").child(userid).child(orderid).child("isFinish").setValue(1);
                 Toast.makeText(ViewOrderDetail.this, "\uD83C\uDF89 Congrats! Enjoy the Meal \uD83E\uDD73", Toast.LENGTH_SHORT).show();
+                //Delay và chuyển sang trang danh sách đã thanh toán
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        startActivity(new Intent(ViewOrderDetail.this, PaymentHistory.class));
+
+                        finish();
+                    }
+                }, 3000);
+
             }
         });
     }

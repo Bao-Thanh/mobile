@@ -4,36 +4,37 @@ public class User {
 //    Chưa sử dụng
 
 
-    private String uid;
+    private String userid;
     private String email;
     private String password;
-    private String fname;
-    private String lname;
-    private String tel;
+    private String firstname;
+    private String lastname;
+    private String phno;
     private String address;
-    private String STK;
+    private String numberaccount;
 
     //Constructor
 
-    public User(String uid,String email, String password, String fname, String lname, String tel, String address, String STK) {
-        this.uid = uid;
+    public User(String userid, String email, String password, String firstname, String lastname, String phno, String address, String numberaccount) {
+        this.userid = userid;
         this.email = email;
         this.password = password;
-        this.fname = fname;
-        this.lname = lname;
-        this.tel = tel;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.phno = phno;
         this.address = address;
-        this.STK = STK;
+        this.numberaccount = numberaccount;
     }
+
 
     //Getter / Setter
 
-    public String getUid() {
-        return uid;
+    public String getUserid() {
+        return userid;
     }
 
-    public void setUid(String uid) {
-        this.uid = uid;
+    public void setUserid(String userid) {
+        this.userid = userid;
     }
 
     public String getEmail() {
@@ -52,28 +53,28 @@ public class User {
         this.password = password;
     }
 
-    public String getFname() {
-        return fname;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setFname(String fname) {
-        this.fname = fname;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
-    public String getLname() {
-        return lname;
+    public String getLastname() {
+        return lastname;
     }
 
-    public void setLname(String lname) {
-        this.lname = lname;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
-    public String getTel() {
-        return tel;
+    public String getPhno() {
+        return phno;
     }
 
-    public void setTel(String tel) {
-        this.tel = tel;
+    public void setPhno(String phno) {
+        this.phno = phno;
     }
 
     public String getAddress() {
@@ -84,11 +85,11 @@ public class User {
         this.address = address;
     }
 
-    public String getSTK() {
-        return STK;
+    public String getNumberaccount() {
+        return numberaccount;
     }
 
-    public void setSTK(String STK) {
-        this.STK = STK;
+    public void setNumberaccount(String numberaccount) {
+        this.numberaccount = numberaccount;
     }
 }
