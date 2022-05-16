@@ -3,6 +3,7 @@ package com.android.foodorderapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.navigation.NavController;
 import androidx.navigation.NavOptions;
 import androidx.navigation.Navigation;
@@ -11,8 +12,11 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.BroadcastReceiver;
 import android.content.ClipData;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
@@ -20,13 +24,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.android.foodorderapp.adapters.RestaurantListAdapter;
+import com.android.foodorderapp.extras.LogoutDialog;
 import com.android.foodorderapp.model.RestaurantModel;
 import com.android.foodorderapp.ui.profile.ProfileFragment;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.gson.Gson;
@@ -42,7 +49,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.android.foodorderapp.extras.LogoutDialog;
+import com.android.foodorderapp.extras.Broadcast;
+
+import static com.android.foodorderapp.extras.Broadcast.IS_NETWORK_AVAILABLE;
+import static com.android.foodorderapp.extras.Broadcast.NETWORK_AVAILABLE_ACTION;
 
 public class MainActivity extends AppCompatActivity implements RestaurantListAdapter.RestaurantListClickListener {
     private FirebaseAuth.AuthStateListener authListener;
@@ -54,6 +64,18 @@ public class MainActivity extends AppCompatActivity implements RestaurantListAda
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //Action when wifi change
+        IntentFilter intentFilter = new IntentFilter(Broadcast.NETWORK_AVAILABLE_ACTION);
+        LocalBroadcastManager.getInstance(this).registerReceiver(new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                boolean isNetworkAvailable = intent.getBooleanExtra(IS_NETWORK_AVAILABLE, false);
+                String networkStatus = isNetworkAvailable ? "connected" : "disconnected";
+
+                Snackbar.make(findViewById(R.id.activity_main), "Network Status: " + networkStatus, Snackbar.LENGTH_LONG).show();
+            }
+        }, intentFilter);
+
 
         //Add action bar
         ActionBar actionBar = getSupportActionBar();

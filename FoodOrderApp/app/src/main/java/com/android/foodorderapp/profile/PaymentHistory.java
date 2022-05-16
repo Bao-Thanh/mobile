@@ -15,6 +15,7 @@ import com.android.foodorderapp.R;
 import com.android.foodorderapp.ViewOrderDetail;
 import com.android.foodorderapp.adapters.OrderListApdater;
 import com.android.foodorderapp.model.Orders;
+import com.android.foodorderapp.ui.profile.ProfileFragment;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -74,5 +75,10 @@ public class PaymentHistory extends AppCompatActivity {
                 //do nothing
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        startActivityForResult(new Intent(PaymentHistory.this, ProfileFragment.class), 1000);
+        finish();
     }
 }

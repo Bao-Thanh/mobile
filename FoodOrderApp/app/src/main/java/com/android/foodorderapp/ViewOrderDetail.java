@@ -1,9 +1,12 @@
 package com.android.foodorderapp;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.icu.text.DecimalFormat;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -21,6 +24,7 @@ import com.android.foodorderapp.adapters.PlaceYourOrderAdapter;
 import com.android.foodorderapp.model.Menu;
 import com.android.foodorderapp.model.Orders;
 import com.android.foodorderapp.model.RestaurantModel;
+import com.android.foodorderapp.profile.OrderHistory;
 import com.android.foodorderapp.profile.PaymentHistory;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -35,6 +39,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
+import java.util.UUID;
 
 
 public class ViewOrderDetail extends AppCompatActivity {
@@ -200,5 +205,41 @@ public class ViewOrderDetail extends AppCompatActivity {
         cartItemsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         placeYourOrderAdapter = new PlaceYourOrderAdapter(lMenu);
         cartItemsRecyclerView.setAdapter(placeYourOrderAdapter);
+    }
+
+    @Override
+    public void onBackPressed() {
+        // setup the alert builder
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Quay lại?");
+        builder.setMessage("Bạn muốn quay lại trang nào?");
+
+        // add the buttons
+        builder.setPositiveButton("Orders", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                startActivityForResult(new Intent(ViewOrderDetail.this, OrderHistory.class), 1000);
+                finish();
+            }
+        });
+        builder.setNeutralButton("Trang chủ", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                startActivityForResult(new Intent(ViewOrderDetail.this, MainActivity.class), 1000);
+                finish();
+            }
+        });
+        builder.setNegativeButton("Payment", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                startActivityForResult(new Intent(ViewOrderDetail.this, PaymentHistory.class), 1000);
+                finish();
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
     }
 }

@@ -1826,6 +1826,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id activity_main
 id add
 id addMoreLayout
 id addToCartButton
