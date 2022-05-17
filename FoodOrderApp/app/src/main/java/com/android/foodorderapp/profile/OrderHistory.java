@@ -18,6 +18,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.android.foodorderapp.MainActivity;
 import com.android.foodorderapp.RestaurantMenuActivity;
+import com.android.foodorderapp.ui.profile.ProfileFragment;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
@@ -90,5 +91,11 @@ public class OrderHistory extends AppCompatActivity {
                 //do nothing
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivityForResult(new Intent(OrderHistory.this, ProfileFragment.class), 1000);
+        finish();
     }
 }
