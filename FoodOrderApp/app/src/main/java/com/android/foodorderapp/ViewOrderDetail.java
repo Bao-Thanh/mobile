@@ -211,37 +211,8 @@ public class ViewOrderDetail extends AppCompatActivity {
     public void onBackPressed() {
         //check nếu đang ở trang view của payment thì hỏi còn k thì trực tiếp cho lui lại
         if (isFinish.equals("1")) {
-            // setup the alert builder
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("Quay lại?");
-            builder.setMessage("Bạn muốn quay lại trang nào?");
-
-            // add the buttons
-            builder.setPositiveButton("Orders", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    startActivityForResult(new Intent(ViewOrderDetail.this, OrderHistory.class), 1000);
-                    finish();
-                }
-            });
-            builder.setNeutralButton("Trang chủ", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    startActivityForResult(new Intent(ViewOrderDetail.this, MainActivity.class), 1000);
-                    finish();
-                }
-            });
-            builder.setNegativeButton("Payment", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    startActivityForResult(new Intent(ViewOrderDetail.this, PaymentHistory.class), 1000);
-                    finish();
-                }
-            });
-
-            // create and show the alert dialog
-            AlertDialog dialog = builder.create();
-            dialog.show();
+            startActivity(new Intent(ViewOrderDetail.this, PaymentHistory.class));
+            finish();
         }
         else {
             startActivity(new Intent(ViewOrderDetail.this, OrderHistory.class));
