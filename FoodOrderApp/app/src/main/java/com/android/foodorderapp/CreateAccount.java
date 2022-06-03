@@ -91,7 +91,7 @@ public class CreateAccount extends AppCompatActivity {
                     return;
                 }
                 if(sstk.length()!=10){
-                    txtStk.setError("Pincode must be of 10 digits");
+                    txtStk.setError("STK must be of 10 digits");
                     return;
                 }
 
